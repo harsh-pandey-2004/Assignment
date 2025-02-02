@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const MindMap = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [visibleUsers, setVisibleUsers] = useState(3); // Initially show posts for 3 users
+  const [visibleUsers, setVisibleUsers] = useState(3); 
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -29,7 +29,6 @@ const MindMap = () => {
     );
   }
 
-  // Group posts by userId
   const groupedPosts = posts.reduce((acc, post) => {
     if (!acc[post.userId]) {
       acc[post.userId] = [];
@@ -38,12 +37,10 @@ const MindMap = () => {
     return acc;
   }, {});
 
-  // Get the first `visibleUsers` users
   const visibleGroupedPosts = Object.entries(groupedPosts).slice(0, visibleUsers);
 
-  // Function to load more users
   const loadMoreUsers = () => {
-    setVisibleUsers((prev) => prev + 3); // Increase visible users by 3
+    setVisibleUsers((prev) => prev + 3); 
   };
 
   return (

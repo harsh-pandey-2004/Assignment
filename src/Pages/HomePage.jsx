@@ -62,11 +62,9 @@ const LuxuryTable = () => {
   return (
     <div className="p-8 max-w-7xl mx-auto relative">
       <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-        {/* Header Section */}
         <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 p-6">
           <h2 className="text-2xl font-bold text-white mb-4">Data Explorer</h2>
           
-          {/* Search and Filters Bar */}
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="relative flex-1">
               <input
@@ -94,7 +92,6 @@ const LuxuryTable = () => {
           </div>
         </div>
 
-        {/* Table Section */}
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-50">
@@ -154,7 +151,6 @@ const LuxuryTable = () => {
           </table>
         </div>
 
-        {/* Pagination */}
         <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
           <div className="flex justify-between items-center">
             <span className="text-sm text-gray-600">
