@@ -29,6 +29,4 @@ export default {
       },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'), // Add the scrollbar plugin
-  ],};
+  };
