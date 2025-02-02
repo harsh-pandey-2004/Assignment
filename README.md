@@ -1,6 +1,3 @@
-# React + Vite Project
-
-
 
 ## All Four Questions Completed
 
